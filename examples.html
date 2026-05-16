@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Examples | TimeBackHQ</title>
+  <meta name="description" content="Illustrative TimeBackHQ workflow examples for owner-led businesses." />
+  <link rel="icon" href="assets/timebackhq-logo-thumb.png" />
+  <style>
+    :root{--ink:#101828;--muted:#475467;--line:#e4e7ec;--bg:#f8fafc;--card:#ffffff;--brand:#2457ff;--brand2:#14b8a6;--dark:#0b1220}
+    *{box-sizing:border-box} html,body{max-width:100%;overflow-x:hidden} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+    a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 24px}.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;gap:24px}.logo{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.03em}.logo-img{width:148px;height:auto;display:block}.mobile-cta{display:none}.mobile-menu{display:none}.nav-links{display:flex;align-items:center;gap:22px}.nav-links a{font-size:14px;text-decoration:none;color:var(--muted);font-weight:650}.nav-links a.active{color:var(--ink);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:7px}.nav-cta{display:inline-flex!important;align-items:center;justify-content:center;border-radius:999px;background:var(--dark);color:#fff!important;padding:10px 16px}.hero{padding:64px 0 34px}.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);border-radius:999px;background:#fff;padding:8px 12px;color:var(--muted);font-size:14px}.dot{width:8px;height:8px;border-radius:50%;background:var(--brand2)}h1{font-size:clamp(44px,7vw,76px);line-height:.95;letter-spacing:-.07em;margin:22px 0 20px;max-width:900px}.lead{font-size:clamp(18px,2.3vw,24px);color:var(--muted);max-width:820px}.section{padding:46px 0}.section h2{font-size:clamp(30px,4vw,44px);letter-spacing:-.045em;line-height:1.05;margin:0 0 16px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:34px 0}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 10px 30px rgba(16,24,40,.04)}.card h3{margin:0 0 8px;font-size:18px}.card p,.card li{color:var(--muted);font-size:15px}.mini-label{display:inline-flex;margin-bottom:14px;border:1px solid #dbeafe;border-radius:999px;background:#eff6ff;color:#1d4ed8;padding:6px 10px;font-size:13px;font-weight:800}.example-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;align-items:stretch}.example-panel{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px}.example-flow{display:grid;gap:12px}.flow-row{display:grid;grid-template-columns:120px 1fr;gap:14px;align-items:start;border:1px solid var(--line);border-radius:16px;background:#fff;padding:14px}.flow-row strong{font-size:14px;color:var(--ink)}.flow-row span{color:var(--muted);font-size:14px}.owner-proof{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px}.proof-step{border:1px solid var(--line);border-radius:16px;background:#fff;padding:16px}.proof-step strong{display:block;font-size:14px;margin-bottom:6px}.proof-step span{display:block;color:var(--muted);font-size:14px}.dark{background:var(--dark);color:#fff;border-radius:28px;padding:40px}.dark p{color:#cbd5e1}.actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:12px;padding:14px 18px;text-decoration:none;font-weight:700}.primary{background:var(--brand);color:#fff}.secondary{border:1px solid var(--line);background:#fff;color:var(--ink)}.footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}.footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    @media(max-width:1200px){.grid,.example-grid,.owner-proof{grid-template-columns:1fr}.hero{padding-top:30px}.nav{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;padding:16px 0;gap:10px}.nav-links{display:none}.mobile-cta{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;background:var(--dark);color:#fff!important;padding:10px 14px;font-size:13px;font-weight:750;text-decoration:none;white-space:nowrap}.mobile-menu{display:block;position:relative;justify-self:end}.mobile-menu summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;min-height:38px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);padding:9px 13px;font-size:13px;font-weight:750;line-height:1}.mobile-menu summary::-webkit-details-marker{display:none}.mobile-menu-links{position:absolute;right:0;top:calc(100% + 10px);z-index:20;width:min(300px,calc(100vw - 36px));display:grid;gap:8px;padding:12px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 12px 32px rgba(16,24,40,.08)}.mobile-menu-links a{display:flex;align-items:center;justify-content:space-between;min-height:42px;border-radius:12px;padding:10px 12px;color:var(--ink);text-decoration:none;font-size:14px;font-weight:700;background:#f8fafc;border:1px solid var(--line)}.logo-img{width:132px}h1{font-size:clamp(38px,11vw,48px);line-height:1;letter-spacing:-.055em;margin:18px 0 14px}.lead{font-size:17px;line-height:1.5}.actions{display:grid;grid-template-columns:1fr;gap:10px;margin-top:24px}.btn{width:100%;min-height:50px;text-align:center}.card,.example-panel{padding:20px;border-radius:18px}.section{padding:34px 0}.section h2{font-size:clamp(28px,8vw,36px);letter-spacing:-.04em}.dark{padding:24px;border-radius:22px}.flow-row{grid-template-columns:1fr;gap:6px}.footer{padding:22px 0}.footer .wrap{display:block}.footer span{display:block;margin:6px 0}}
+    @media(max-width:430px){.wrap{padding:0 18px}.nav{grid-template-columns:minmax(0,1fr) auto auto}.logo{min-width:0}.logo-img{width:112px}.mobile-cta{padding:8px 10px;font-size:11px;max-width:88px;overflow:hidden;text-overflow:ellipsis}.mobile-menu summary{min-height:36px;padding:8px 10px;font-size:12px}h1{font-size:38px;max-width:100%;overflow-wrap:break-word}.lead,.card,.example-panel,.proof-step{max-width:100%;min-width:0}.card p,.card li{font-size:14px}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <div class="logo"><a href="index.html"><img class="logo-img" src="assets/timebackhq-logo.png" alt="TimeBackHQ logo"></a></div>
+    <a class="mobile-cta" href="/intake.html" aria-label="Request assessment">Assessment</a>
+    <details class="mobile-menu">
+      <summary>Menu</summary>
+      <nav class="mobile-menu-links" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="examples.html" aria-current="page">Examples</a>
+        <a href="about.html">About</a>
+        <a href="mailto:david@timebackhq.com?subject=Question%20about%20AI%20workflow%20assessment">Contact</a>
+      </nav>
+    </details>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="how-it-works.html">How it works</a>
+      <a class="active" href="examples.html" aria-current="page">Examples</a>
+      <a href="about.html">About</a>
+      <a href="mailto:david@timebackhq.com?subject=Question%20about%20AI%20workflow%20assessment">Contact</a>
+      <a class="nav-cta" href="/intake.html">Request assessment</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <div class="eyebrow"><span class="dot"></span> Examples</div>
+      <h1>What useful AI can look like inside an owner-led business.</h1>
+      <p class="lead">These are illustrative workflow patterns, not client case studies. They show the kind of stuck work a TimeBackHQ assessment can identify and the kind of operating layer that may be worth building.</p>
+    </section>
+
+    <section class="wrap section">
+      <div class="example-grid">
+        <div>
+          <span class="mini-label">Owner briefing</span>
+          <h2>A small system that catches loose ends before the owner has to hunt for them.</h2>
+          <p class="lead">The first useful workflow is often simple: gather the right signals, flag what matters, and keep customer-facing action approval-gated.</p>
+        </div>
+        <div class="example-panel">
+          <h3>Example owner briefing</h3>
+          <div class="example-flow">
+            <div class="flow-row"><strong>Inputs</strong><span>Email, intake form, calendar, task list, project notes, customer records</span></div>
+            <div class="flow-row"><strong>Rules</strong><span>Flag stale follow-ups, missing next steps, urgent replies, and owner decisions</span></div>
+            <div class="flow-row"><strong>Output</strong><span>One morning note: what needs attention, what can wait, and what is blocked</span></div>
+            <div class="flow-row"><strong>Guardrail</strong><span>AI can draft or summarize. The owner still approves customer-facing moves.</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="owner-proof" aria-label="TimeBackHQ example workflow">
+        <div class="proof-step"><strong>Before</strong><span>Follow-ups, notes, and decisions are scattered across inboxes and memory.</span></div>
+        <div class="proof-step"><strong>Assessment</strong><span>TimeBackHQ maps where work stalls and which fixes are safe to try first.</span></div>
+        <div class="proof-step"><strong>System</strong><span>A small operating rhythm organizes the next actions and decision points.</span></div>
+        <div class="proof-step"><strong>Time back</strong><span>The owner spends less time hunting and more time making the calls that matter.</span></div>
+      </div>
+    </section>
+
+    <section class="wrap section">
+      <h2>Illustrative workflow patterns.</h2>
+      <p class="lead">The details change by business. The pattern is the point: find the repeated friction, define the approval boundary, and make the next step easier to see.</p>
+      <div class="grid">
+        <div class="card">
+          <span class="mini-label">Lead follow-up</span>
+          <h3>Stop losing quiet opportunities</h3>
+          <p>A contractor or professional-service owner has leads, estimates, referrals, and past customers spread across email and text. A first system could capture each opportunity, assign a next-step date, flag stalled deals, and draft follow-up messages for approval.</p>
+        </div>
+        <div class="card">
+          <span class="mini-label">Knowledge reuse</span>
+          <h3>Turn expertise into reusable support</h3>
+          <p>A business relies on pricing notes, old proposals, reference material, and the owner's judgment. A first system could help prepare draft checklists, scopes, or prep notes from approved material while keeping pricing and final commitments human-reviewed.</p>
+        </div>
+        <div class="card">
+          <span class="mini-label">Weekly visibility</span>
+          <h3>See problems before they become urgent</h3>
+          <p>A small team rebuilds the same status report by hand or misses aging items until they are painful. A first system could produce a weekly summary of stale tasks, unpaid invoices, open decisions, and what changed since the last review.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section">
+      <div class="dark">
+        <h2>Start with your stuck work.</h2>
+        <p>The assessment is where TimeBackHQ decides whether a pattern like this is useful, premature, or not worth doing. The goal is a practical next move, not automation for its own sake.</p>
+        <div class="actions"><a class="btn primary" href="/intake.html">Request assessment</a><a class="btn secondary" href="index.html">Back to homepage</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap"><span>© 2026 TimeBackHQ</span></div></footer>
+</body>
+</html>
