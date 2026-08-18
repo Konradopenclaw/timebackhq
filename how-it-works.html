@@ -319,6 +319,27 @@
         color: #1d4ed8;
         font-weight: 800;
       }
+      .process {
+        counter-reset: step;
+      }
+      .step {
+        display: grid;
+        grid-template-columns: 52px minmax(0, 1fr);
+        gap: 18px;
+        align-items: start;
+        margin-top: 22px;
+      }
+      .num {
+        width: 52px;
+        height: 52px;
+        border-radius: 16px;
+        background: #eef4ff;
+        color: var(--brand);
+        display: grid;
+        place-items: center;
+        font-size: 18px;
+        font-weight: 900;
+      }
       .footer {
         margin-top: 40px;
         border-top: 1px solid var(--line);
@@ -541,6 +562,16 @@
         }
         .hero-art img {
           aspect-ratio: 1/1;
+        }
+        .step {
+          grid-template-columns: 42px minmax(0, 1fr);
+          gap: 14px;
+        }
+        .num {
+          width: 42px;
+          height: 42px;
+          border-radius: 13px;
+          font-size: 16px;
         }
         .card,
         .panel,
