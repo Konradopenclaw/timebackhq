@@ -266,6 +266,38 @@
         font-size: 19px;
         margin-bottom: 6px;
       }
+      .at-a-glance {
+        margin-top: 24px;
+      }
+      .at-a-glance h2 {
+        font-size: 20px;
+        line-height: 1.25;
+        letter-spacing: normal;
+        margin-bottom: 10px;
+      }
+      .sample-details {
+        margin-top: 18px;
+        border-top: 1px solid var(--line);
+        padding-top: 16px;
+      }
+      .sample-details summary {
+        cursor: pointer;
+        color: var(--ink);
+        font-weight: 750;
+      }
+      .sample-details summary::marker {
+        color: var(--brand);
+      }
+      .sample-details[open] summary {
+        margin-bottom: 12px;
+      }
+      .sample-details .list {
+        margin-top: 12px;
+      }
+      .sample-reply-heading {
+        margin-top: 16px;
+        color: var(--ink);
+      }
       .price {
         font-size: 44px;
         font-weight: 850;
@@ -631,6 +663,14 @@
           real client, customer, outcome, testimonial, revenue figure, return on
           investment, or guaranteed result appears on this page.
         </div>
+        <div class="card at-a-glance">
+          <h2>At a glance</h2>
+          <p>
+            This sample shows how TimeBackHQ turns a recurring handoff failure
+            into a visible lead pipeline, a weekly owner brief, and clear approval
+            boundaries without automating the owner's judgment.
+          </p>
+        </div>
       </section>
       <section class="wrap section">
         <h2>Lead volume is not the problem; the handoff is.</h2>
@@ -728,23 +768,21 @@
       <section class="wrap section">
         <h2>Seven priorities, in order.</h2>
         <ol class="steps">
+          <li>One lead record for every inquiry, every channel.</li>
           <li>
-            Create one lead record for every inquiry, regardless of whether it
-            arrives by phone, web form, referral, text, or email.
+            Required fields before a record can move: source, stage, owner, next
+            action, and due date.
           </li>
-          <li>
-            Require a source, stage, owner, next action, and due date before the
-            record can move.
-          </li>
-          <li>
-            Record the quote-sent date, quote age, follow-up status, and next
-            follow-up date.
-          </li>
-          <li>Build a weekly owner brief for overdue actions and exceptions.</li>
-          <li>Build one Project Start Handoff Packet.</li>
+          <li>Quote-sent date, age, follow-up status, and next follow-up date.</li>
+          <li>Weekly owner brief for overdue actions and exceptions.</li>
+          <li>One Project Start Handoff Packet.</li>
           <li>Separate low-consequence drafting from customer commitments.</li>
-          <li>Capture one closeout lesson that improves the next workflow.</li>
+          <li>One closeout lesson that improves the next workflow.</li>
         </ol>
+        <p class="note">
+          The assessment expands the highest-leverage items into concrete
+          first-week actions like the two Quick Starts below.
+        </p>
       </section>
       <section class="wrap section">
         <div class="card">
@@ -754,54 +792,12 @@
             Give the office coordinator and owner one reliable view of every new
             inquiry and its next action.
           </p>
-          <h3>Minimum lead record</h3>
-          <ul class="list">
-            <li>Contact</li>
-            <li>Project type</li>
-            <li>General service-area location</li>
-            <li>Timing</li>
-            <li>Budget posture, if known</li>
-            <li>Lead source: phone, web form, referral, text, or email</li>
-            <li>Known constraints</li>
-            <li>Missing information</li>
-            <li>
-              Stage: New, Contact Attempted, Qualified, Site Visit Needed, Quote
-              in Progress, Quote Sent, Won, Lost, or Not a Fit
-            </li>
-            <li>Owner</li>
-            <li>Next action</li>
-            <li>Due date</li>
-            <li>Last meaningful customer contact</li>
-            <li>Quote sent date and quote age, when applicable</li>
-            <li>
-              Follow-up status: not due, due today, overdue, paused, or owner
-              review
-            </li>
-            <li>Exact exception decision, if one is needed</li>
-          </ul>
           <h3>Tangible first-week target</h3>
           <p>
             By the end of the first working week, Cedarline can open one queue,
             see what happens next, and route routine inquiries without asking
             the owner to reconstruct the record.
           </p>
-          <h3>More information needed</h3>
-          <p>Hi Example Homeowner,</p>
-          <p>
-            Thank you for reaching out about your kitchen refresh. Before we
-            schedule the next conversation, could you reply with the city or
-            general service-area location, the parts of the kitchen you expect
-            to change, your preferred timing, whether the layout or plumbing
-            locations need to move, and any access or occupied-home constraints
-            we should understand?
-          </p>
-          <p>
-            Please do not send financial records, identification documents,
-            alarm codes, or other sensitive information. Once we have the basic
-            project context, we will review it and respond with the appropriate
-            next step.
-          </p>
-          <p>Thank you,<br />Cedarline Remodel Works</p>
           <h3>Approval boundary</h3>
           <p>
             The office coordinator can use the written fit rules for ordinary
@@ -814,10 +810,57 @@
             action, overdue actions, quotes grouped by age, items waiting on
             customer information, and exceptions that require a decision.
           </p>
-          <p class="note">
-            These stages, fields, and thresholds are illustrative. A real client's
-            pipeline would be tailored to its own workflow and existing tools.
-          </p>
+          <details class="sample-details">
+            <summary>Example minimum lead record fields and sample reply</summary>
+            <ul class="list">
+              <li>Contact</li>
+              <li>Project type</li>
+              <li>General service-area location</li>
+              <li>Timing</li>
+              <li>Budget posture, if known</li>
+              <li>Lead source: phone, web form, referral, text, or email</li>
+              <li>Known constraints</li>
+              <li>Missing information</li>
+              <li>
+                Stage: New, Contact Attempted, Qualified, Site Visit Needed,
+                Quote in Progress, Quote Sent, Won, Lost, or Not a Fit
+              </li>
+              <li>Owner</li>
+              <li>Next action</li>
+              <li>Due date</li>
+              <li>Last meaningful customer contact</li>
+              <li>Quote sent date and quote age, when applicable</li>
+              <li>
+                Follow-up status: not due, due today, overdue, paused, or owner
+                review
+              </li>
+              <li>Exact exception decision, if one is needed</li>
+            </ul>
+            <p class="sample-reply-heading">
+              <strong>Sample “more information needed” reply</strong>
+            </p>
+            <p>Hi Example Homeowner,</p>
+            <p>
+              Thank you for reaching out about your kitchen refresh. Before we
+              schedule the next conversation, could you reply with the city or
+              general service-area location, the parts of the kitchen you expect
+              to change, your preferred timing, whether the layout or plumbing
+              locations need to move, and any access or occupied-home constraints
+              we should understand?
+            </p>
+            <p>
+              Please do not send financial records, identification documents,
+              alarm codes, or other sensitive information. Once we have the basic
+              project context, we will review it and respond with the appropriate
+              next step.
+            </p>
+            <p>Thank you,<br />Cedarline Remodel Works</p>
+            <p class="note">
+              These stages, fields, and thresholds are illustrative. A real
+              client's pipeline would be tailored to its own workflow and
+              existing tools.
+            </p>
+          </details>
         </div>
       </section>
       <section class="wrap section">
@@ -839,14 +882,13 @@
           </ul>
           <h3>Filled fictional scope example</h3>
           <p>
-            Cedarline will remove the existing cabinet fronts, counters, sink,
-            and selected lighting, then install the customer-approved
-            replacements and repaint the affected kitchen surfaces. The existing
-            room layout and plumbing locations will remain unchanged. Appliances
-            are customer-supplied and must be onsite by the agreed installation
-            date. Structural work, electrical-panel changes, and repairs outside
-            the documented kitchen work area are not included unless approved
-            through a separate written change.
+            Remove existing cabinet fronts, counters, sink, and selected lighting;
+            install customer-approved replacements and repaint affected surfaces.
+            Layout and plumbing stay unchanged. Appliances are customer-supplied
+            and must be onsite by the agreed installation date. Structural work,
+            electrical-panel changes, and repairs outside the documented kitchen
+            work area remain excluded unless approved through a separate written
+            change.
           </p>
           <h3>The packet records approval; it does not create it.</h3>
           <div class="two">
@@ -909,8 +951,8 @@
           <article class="card">
             <h3>Week 1</h3>
             <p>
-              Put the Lead Brief, response lanes, visible action ownership, and
-              exception rule into use inside an existing tool.
+              Put the lead record, response lanes, visible action ownership, and
+              exception rules into use inside an existing tool.
             </p>
           </article>
           <article class="card">
@@ -948,10 +990,10 @@
             <p>Scope a bounded, done-with-you setup for one narrow workflow.</p>
           </article>
           <article class="card">
-            <h3>Scoped implementation</h3>
+            <h3>Advanced Project</h3>
             <p>
-              Quote focused or advanced work only after the systems, source
-              information, risk, access, and approval boundaries are understood.
+              Scope a larger build only after the systems, source information,
+              risk, access, and approval boundaries are understood.
             </p>
           </article>
         </div>
